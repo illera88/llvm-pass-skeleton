@@ -1,6 +1,8 @@
 add_library(SkeletonPass MODULE
     # List your source files here.
-    Skeleton.cpp
+     compare-transform-pass.so.cc
+     split-compares-pass.so.cc
+     split-switches-pass.so.cc
 )
 
 # Use C++11 to compile our pass (i.e., supply -std=c++11).
