@@ -14,3 +14,11 @@ Build:
 Run:
 
     $ clang -Xclang -load -Xclang build/skeleton/libSkeletonPass.* something.c
+    
+This will generate a `.ll` file that will contain the llvm bytecode. We can compile to binary using clang:
+    
+    $clang something.ll -o out
+    
+But we can get the assembly (`.s`) doing:
+     
+     $llc something.ll
